@@ -25,6 +25,7 @@ This section gives the bill of materials, the overall architecture and some othe
 | Wire Stripper | Deli 6-inch multi-function stripper (0.6-2.6mm) | [【JD.com】Deli Multi-function Wire Stripper](https://3.cn/2dkT0I-5) |
 
 ## Overall architecture of the Embodied AI car
-![Overall Architecture](images/overall arch of car.png)
+![Overall Architecture](images/overall_arch_of_car.png)
 
 ## Steps of Assembling
+
