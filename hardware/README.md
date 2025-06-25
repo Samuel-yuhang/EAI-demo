@@ -2,7 +2,7 @@
 
 This section gives the bill of materials, the overall architecture and steps of assembling.
 
-## Embodied AI Car Hardware Bill of Materials
+## 1. Embodied AI Car Hardware Bill of Materials
 
 | Component | Specification / Model | Reference Link |
 | :--- | :--- | :--- |
@@ -24,14 +24,14 @@ This section gives the bill of materials, the overall architecture and steps of 
 | Screwdriver | PH0 Phillips Head (for M2.5, M3 screws) | [【Taobao】Deli PH0 Phillips Screwdriver](https://e.tb.cn/h.TvPxrsTTwQoVKTu?tk=fmCQel6NVPN) |
 | Wire Stripper | Deli 6-inch multi-function stripper (0.6-2.6mm) | [【JD.com】Deli Multi-function Wire Stripper](https://3.cn/2dkT0I-5) |
 
-## Overall architecture of the Embodied AI car
+## 2. Overall architecture of the Embodied AI car
 ![Overall Architecture](images/overall_arch_of_car.png)
 
-## Steps of Assembling
+## 3. Steps of Assembling
 
 ---
 
-#### 1. Mount Components & Connect Motors to Driver Board
+#### 3.1 Mount Components & Connect Motors to Driver Board
 
 1.  **Mount the Driver Board:** Securely fasten the motor driver board to the car chassis.
     -   **CRITICAL WARNING:** The chassis is metal. To prevent short circuits that can damage your electronics, **DO NOT** let the solder points on the back of the driver board or Raspberry Pi touch the metal chassis directly. Use standoffs, an insulation pad, or another non-conductive method to mount them.
@@ -44,7 +44,7 @@ This section gives the bill of materials, the overall architecture and steps of 
 
 ---
 
-#### 2. Connect Battery to Driver Board
+#### 3.2 Connect Battery to Driver Board
 
 1.  **Secure the Battery:** Fasten the battery securely onto the chassis using zip ties, tape, or another reliable method.
 2.  **Ensure Power is Off:** Double-check that the power switch on the driver board is in the **OFF** position.
@@ -56,7 +56,7 @@ This section gives the bill of materials, the overall architecture and steps of 
 
 ---
 
-#### 3. Connect Driver Board to Raspberry Pi
+#### 3.3 Connect Driver Board to Raspberry Pi
 
 1.  **Mount the Raspberry Pi:** Securely fasten the Raspberry Pi to the chassis, following the same short-circuit warning as in step 1.
 2.  **Power the Raspberry Pi from the Driver Board:**
