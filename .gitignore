@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*build/
+*develop-eggs/
+*dist/
+*downloads/
+*eggs/
+*.egg-info/
+*lib/
+*lib64/
+*parts/
+*sdist/
+*var/
+*wheels/
+*.egg
+*instance/
+*htmlcov/
+*.coverage
+*.coverage.*
+*.cache
+*.tox
+.pylintrc
+*.env
+.venv/
+env/
+venv/
+ENV/
+
+# ROS
+*.log
+devel/
+build/
+install/
