@@ -1,6 +1,6 @@
 # Hardware
 
-This section gives the bill of materials, the overall architecture and some other notice.
+This section gives the bill of materials, the overall architecture and steps of assembling.
 
 ## Embodied AI Car Hardware Bill of Materials
 
@@ -29,3 +29,42 @@ This section gives the bill of materials, the overall architecture and some othe
 
 ## Steps of Assembling
 
+---
+
+#### 1. Mount Components & Connect Motors to Driver Board
+
+1.  **Mount the Driver Board:** Securely fasten the motor driver board to the car chassis.
+    -   **CRITICAL WARNING:** The chassis is metal. To prevent short circuits that can damage your electronics, **DO NOT** let the solder points on the back of the driver board or Raspberry Pi touch the metal chassis directly. Use standoffs, an insulation pad, or another non-conductive method to mount them.
+2.  **Prepare Wires:** For each of the 4 motors, prepare one red and one black wire. Strip 2-3mm of insulation from both ends of each wire.
+3.  **Connect Wires to Motors:** Attach one red and one black wire to the metal tabs of each motor. Ensure the connection is secure (soldering is recommended).
+4.  **Connect Motors to Driver Board:**
+    -   Route the wires from the first motor through the chassis.
+    -   Connect the wires to the `OUT1` and `OUT2` screw terminals on the driver board. Loosen the terminal screw, insert the wire, and tighten firmly.
+    -   Repeat for the other 3 motors, connecting them to `OUT3`/`OUT4`, `OUT5`/`OUT6`, and `OUT7`/`OUT8` respectively.
+
+---
+
+#### 2. Connect Battery to Driver Board
+
+1.  **Secure the Battery:** Fasten the battery securely onto the chassis using zip ties, tape, or another reliable method.
+2.  **Ensure Power is Off:** Double-check that the power switch on the driver board is in the **OFF** position.
+3.  **Connect Power Cable:**
+    -   **CRITICAL WARNING:** During this process, never let the positive and negative terminals of the battery touch each other. If you notice any abnormal heat, smoke, or sparks, disconnect the battery immediately.
+    -   Take the provided power cable (with T-plug connector) and connect it to the battery, matching red to red and black to black. **Do not reverse the polarity.**
+    -   Connect the other end of the **black wire** to the `GND` terminal on the driver board.
+    -   Connect the other end of the **red wire** to the `VCC` (or `+12V`) terminal on the driver board. **Triple-check these connections before proceeding.**
+
+---
+
+#### 3. Connect Driver Board to Raspberry Pi
+
+1.  **Mount the Raspberry Pi:** Securely fasten the Raspberry Pi to the chassis, following the same short-circuit warning as in step 1.
+2.  **Power the Raspberry Pi from the Driver Board:**
+    -   Ensure the driver board's power switch is still **OFF**.
+    -   Use a USB-A to USB-C cable to connect the driver board's USB-A port to the Raspberry Pi's USB-C power port.
+    -   You can now flip the power switch ON to test if the Raspberry Pi boots up correctly. Power it OFF again before the next step.
+3.  **Connect GPIO Control Pins:**
+    -   Using female-to-female Dupont wires, connect the GPIO pins on the Raspberry Pi to the control pins `IN1` through `IN8` on the driver board.
+    -   The specific GPIO pins you use on the Raspberry Pi must match the pin definitions in your control code. Refer to your code and a Raspberry Pi pinout diagram.
+
+![Raspberry Pi 4 pinout diagram](images/GPIO_of_Pi4.png)
