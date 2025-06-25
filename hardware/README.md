@@ -25,7 +25,9 @@ This section gives the bill of materials, the overall architecture and steps of 
 | Wire Stripper | Deli 6-inch multi-function stripper (0.6-2.6mm) | [【JD.com】Deli Multi-function Wire Stripper](https://3.cn/2dkT0I-5) |
 
 ## 2. Overall architecture of the Embodied AI car
-![Overall Architecture](images/overall_arch_of_car.png)
+<p align="center">
+  <img src="images/overall_arch_of_car.png" alt="Overall Architecture" width="70%">
+</p>
 
 ## 3. Steps of Assembling
 
@@ -67,4 +69,6 @@ This section gives the bill of materials, the overall architecture and steps of 
     -   Using female-to-female Dupont wires, connect the GPIO pins on the Raspberry Pi to the control pins `IN1` through `IN8` on the driver board.
     -   The specific GPIO pins you use on the Raspberry Pi must match the pin definitions in your control code. Refer to your code and a Raspberry Pi pinout diagram.
 
-![Raspberry Pi 4 pinout diagram](images/GPIO_of_Pi4.png)
+<p align="center">
+  <img src="images/GPIO_of_Pi4.png" alt="Raspberry Pi 4 pinout diagram" width="400">
+</p>
