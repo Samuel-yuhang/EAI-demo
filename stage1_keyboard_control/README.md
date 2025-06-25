@@ -129,7 +129,7 @@ With the code and configuration in place, you can now build and run the nodes.
 2.  **Run the Nodes:**
     You will need **two separate terminals** connected to your network.
 
-    -   **IN TERMINAL 1 (SSH'd into Raspberry Pi):**
+    -   **IN TERMINAL 1 (On Raspberry Pi):**
         ```bash
         
         # Navigate to your workspace
@@ -143,7 +143,7 @@ With the code and configuration in place, you can now build and run the nodes.
         ```
         You should see a message indicating the node has started and is waiting for commands.
 
-    -   **IN TERMINAL 2 (On your Host PC):**
+    -   **IN TERMINAL 2 (On Raspberry Pi too):**
         ```bash
         # Run the keyboard teleop node
         ros2 run teleop_twist_keyboard teleop_twist_keyboard
