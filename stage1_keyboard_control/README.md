@@ -131,8 +131,6 @@ With the code and configuration in place, you can now build and run the nodes.
 
     -   **IN TERMINAL 1 (SSH'd into Raspberry Pi):**
         ```bash
-        # Activate the ROS 2 environment
-        source /opt/ros/humble/setup.bash
         
         # Navigate to your workspace
         cd ~/FIRSTPROJECT
@@ -147,9 +145,6 @@ With the code and configuration in place, you can now build and run the nodes.
 
     -   **IN TERMINAL 2 (On your Host PC):**
         ```bash
-        # Activate the ROS 2 environment on your PC
-        source /opt/ros/humble/setup.bash
-        
         # Run the keyboard teleop node
         ros2 run teleop_twist_keyboard teleop_twist_keyboard
         ```
